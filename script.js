@@ -15,6 +15,15 @@ console.log("book Name: ",book_Name,'\n',"book authon: ",book_authors,'\n',"yr p
 publ_yr=2000;// dynamic typing is allowed in js
 console.log(publ_yr)
 
+const NAME='john'; //it is coded as hard coded values. to be in caps for convention
+// const NAME="kevin"; it will raise error if this is uncommented and run with above line.
+console.log(NAME);
+
+//const x=sum(2,3); this is not hard coded since operation has to be done to s,3 and then stored in x. to be in small for convension.
+
+/* camel case for variable- eg: whiteCase
+to make variables more meaning full, instead of using _ betwee 2 words, make use of capital letters */
+
 
 
 
