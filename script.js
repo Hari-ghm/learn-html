@@ -185,3 +185,27 @@ console.log(undefined == 0);//false
 when we are evualting null>0 or null>=0, null is converted to NaN. it prints the results accordingly
 but with == operator,null or undefined when compared with any number should return false is a rule in js.
 */
+
+// IF-ELSE CONDITIONALS
+
+let num=5;;
+if (num>4){
+    console.log(`${num} is greater than 4.`);
+}
+else if(num==4){
+    console.log(`${num} is equal than 4.`);
+}
+else{
+    console.log(`${num} is lesser than 4.`);
+}
+
+//conditional operator
+
+let person;
+age=20;
+person=(age>18)? "adult":"child";
+console.log(person)
+
+age=15;
+person = (age > 18) ? "adult" : (age>14)? 'teenager':"child";
+console.log(person);
