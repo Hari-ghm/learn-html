@@ -143,3 +143,45 @@ console.log(sum)
 x=3
 console.log(--x)// output: 2. pre-decrement
 console.log(x--)// output: 3. post-decrement
+
+// comparisons in js
+
+let resInt= +a > +b; //a and b are in strings. so use unary +
+let resStr=a>b; //false becoz ascii value of 1<4
+console.log(resInt, typeof resInt);
+console.log(resStr, typeof resStr);
+
+let st1='book';
+let st2='books';
+console.log(st1>st2);// false
+
+st1=false;
+st2=0;
+console.log(st1==st2);// true. js converts false to number and then evaluate
+
+console.log('0'==0);// true. automatic type conversion takes place. only values be checked
+console.log('0'===0);// false. automatic type conversion dont takes place. values along with datatype will be checked.
+
+//null and undefined
+
+console.log(null==undefined);//true
+console.log(null>0);//false
+console.log(null<0);// false
+console.log(null<=0);// true
+/* from the above 3 statement, we can sense that null=0 should be true. but it is not the case.*/
+console.log(null==0);// 
+
+/* REASON
+when we are evualting null>0 or null>=0, null is converted to number 0. it prints the results accordingly
+but with == operator,null or undefined when compared with any number should return false is a rule in js.
+*/
+
+console.log(undefined>0);//false
+console.log(undefined<0);// false
+console.log(undefined<=0);// false
+console.log(undefined == 0);//false
+
+/* REASON
+when we are evualting null>0 or null>=0, null is converted to NaN. it prints the results accordingly
+but with == operator,null or undefined when compared with any number should return false is a rule in js.
+*/
