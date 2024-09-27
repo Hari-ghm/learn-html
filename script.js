@@ -94,5 +94,35 @@ console.log(typeof nothing);//prints object
 let DOB;
 console.log(typeof DOB); // prints undefined
 
+// TYPE CONVERSION
+
+console.log('12'/'4');//output is 3. for some operation implicit conversion takes place.
+console.log('12'+'3');//output is 123. here str concontenation takes place
+
+let age=9;
+console.log(typeof age);
+age=String(age)+"0";//use S and not s
+console.log(age, typeof age);
+
+age=Number(age)+5;
+console.log(age, typeof age);
+
+/* if a variable is in boolean type and is converted to number, it will display 1.
+but if a varible is like 'true' in string and is converted to number, it gives NaN
+
+same for null(returns 0), undefines (returns NaN), false(return 0)
+*/
+
+// boolean coversion
+let x=5;
+console.log(typeof x);
+x=Boolean(x);
+console.log(typeof x);
+console.log(x);//evaluates false only if x=0
+
+/* the boolean evales false only if any integer is 0 or if string is there(eg: x='false'), it should have no letters.
+even is space is there,it evaluates true */
+
+
 
 
