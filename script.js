@@ -24,7 +24,43 @@ console.log(NAME);
 /* camel case for variable- eg: whiteCase
 to make variables more meaning full, instead of using _ betwee 2 words, make use of capital letters */
 
+// number datatype
+// numbers datatype include integers,floats and spl numeric values.
+let pi=3.14;
+let prime=29;
 
+console.log(pi,prime);
+console.log(typeof pi); // prints number.
 
+// special numeric values
+let infi=Infinity;
+let negInfi=-Infinity;
+console.log(infi,negInfi);
+console.log(typeof infi,typeof negInfi)
 
+let temp=NaN;
+let temp_1;
+temp_1=NaN+5;// addition operation to Nan. 
+temp_2=NaN**0;
+console.log(temp,":",typeof(temp))
+console.log(temp_1,":",typeof temp_1);// anyoperator done to Nan, the result is also Nan except NaN**0
+console.log(temp_2, ":", typeof temp_2); //only for NaN**0, ans is 1.
 
+/* divided by zero condition */
+
+console.log(1/0);//Infinity
+console.log(0/0);// Nan
+
+// bigint
+
+let limit = 9007199254740991; // beyong this limit, int wont work properly
+
+console.log(limit+1); // correct output
+console.log(limit+2);  //wrong output
+// both the above lines gives same output.
+
+let Limit = 9007199254740991n;//made into bigint datatype 
+console.log(Limit+1n); // correct output
+console.log(Limit+2n);  //correct output
+/* operations oof bigint can be done on same datatypes(bigint)
+ only*/
