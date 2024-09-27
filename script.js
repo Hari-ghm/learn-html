@@ -64,3 +64,35 @@ console.log(Limit+1n); // correct output
 console.log(Limit+2n);  //correct output
 /* operations oof bigint can be done on same datatypes(bigint)
  only*/
+
+// string datatype
+
+let intro='hi this is js';
+console.log(typeof intro);
+
+// `` is a backtip. below esp button. it is used to 
+let para=`this is bat man's home. bruce wayne said "i'm bat man" `  // str is enclosed within  backtip. we can use '' and "" in any order.
+
+// important use of backtip is we can evalaue a expression inside it which is not possible in "" or ''
+
+let s_12 = `sum of 1 and 2 is ${1+2}`; //we have to use $ sign
+console.log(s_12)
+
+// boolean datatype
+
+let isMale=true;
+console.log(typeof isMale);/// prints boolean
+console.log(typeof 4<5);//printts false
+
+// null vvalue
+
+let nothing=null;
+console.log(typeof nothing);//prints object
+
+//undefined value
+
+let DOB;
+console.log(typeof DOB); // prints undefined
+
+
+
