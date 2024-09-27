@@ -120,9 +120,26 @@ x=Boolean(x);
 console.log(typeof x);
 console.log(x);//evaluates false only if x=0
 
-/* the boolean evales false only if any integer is 0 or if string is there(eg: x='false'), it should have no letters.
+/* the boolean evaluates false only if any integer is 0 or if string is there(eg: x='false'), it should have no letters.
 even is space is there,it evaluates true */
 
+//  OPERATORS
 
+// unary
+let l=-1;
+l=-l;
+console.log(l);
 
+//binary + , - , / , * , % , **
+let a=12,b=4;
+let sum=a+b;
+console.log(sum);
 
+a='12'
+b='4'
+sum=+a + +b;// unary + converts string to integer. like int() in python
+console.log(sum)
+
+x=3
+console.log(--x)// output: 2. pre-decrement
+console.log(x--)// output: 3. post-decrement
