@@ -209,3 +209,18 @@ console.log(person)
 age=15;
 person = (age > 18) ? "adult" : (age>14)? 'teenager':"child";
 console.log(person);
+
+// null coalescing logical operator(??)
+/* returns the value of the default to variable if the variable is null or undefined.
+if variable is already declared, it returns the declared value 
+*/
+
+let stop
+let bus_stop=stop??"chennai"
+console.log(bus_stop);
+
+stop="trichy"
+bus_stop = stop ?? "chennai";
+console.log(bus_stop);
+
+console.log(null||0||undefined); //output is undefined
