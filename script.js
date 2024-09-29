@@ -224,3 +224,43 @@ bus_stop = stop ?? "chennai";
 console.log(bus_stop);
 
 console.log(null||0||undefined); //output is undefined
+
+// LOOPS - mostly same as c program(while,do-while,for)
+
+let nu=1;
+while (nu<3){
+    console.log("inside loop");
+    nu++;
+}
+console.log("outside loop");
+
+//factorial and sum of N numbers
+
+n=5;
+let fact=1;
+sumN=0
+i=1
+for (i=1;i<=5;i++){
+    fact*=i;
+    sumN+=i
+}
+console.log(fact);
+console.log(sumN);
+
+//SWITCH-same like c
+
+n=2;
+switch (n) {
+  case 1:
+    console.log("one");
+    break;
+  case 2:
+    console.log("two");
+    break;
+  case 3:
+    console.log("three");
+    break;
+  default:
+    console.log("default");
+    break;
+}
