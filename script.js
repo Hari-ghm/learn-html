@@ -264,3 +264,29 @@ switch (n) {
     console.log("default");
     break;
 }
+
+//FUNCTIONS OR METHODS
+
+let q=4,r=3;
+function addDiff(x1,x2=2){
+  console.log(`x1 + x2 = ${x1+x2}`)
+  let diff=`x1 - x2 = ${x1-x2}`;
+  let check="it is for checked";
+  return diff;
+}
+addDiff(q,r);
+diffr=addDiff(q,r);
+console.log(diffr);
+console.log(check);//error becoz check is local inside function. so correct this put let c=5
+
+let mult=(a,b)=>a*b // arrow functions
+console.log(mult(5,6))
+
+// callback
+function operation(op,a,b){
+  return op(a,b);
+}
+
+let Add=(a,b)=>a+b;
+let sub=(a,b)=>a-b;
+console.log(operation(Add,8,6));
