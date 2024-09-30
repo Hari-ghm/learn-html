@@ -1,5 +1,5 @@
 console.log("Hello");
-// This is single line comment in js. in js, ; is not mandatory at end of eack line.
+// This is single line comment in js. in js, ; is not mandatory at end of each line.
 
 /* this is a multi line comment
 if u have set of code of n lines and want to single comment everyline, use crtl + / 
@@ -290,3 +290,34 @@ function operation(op,a,b){
 let Add=(a,b)=>a+b;
 let sub=(a,b)=>a-b;
 console.log(operation(Add,8,6));
+
+// object-similar o dictionary
+
+let ob={};
+console.log(typeof ob);
+
+ob={
+  obName:'nexon',
+  brand:'tata',
+  driveTrain:'petrol, diesel, ev',
+  price:15,
+  "colour":"Red",
+  onRoadPrice(price){
+    return this.price+2;//this tell js to take price value from the dictionary itself.
+  }
+};
+console.log(ob);//display whole dictionary
+console.log(ob.obName);// nexon
+console.log(ob["colour"]);
+
+/* while using variables as key use can give ob.varible.
+but while using strings as keys, u should give ob[string]
+*/
+
+delete ob["colour"];
+console.log(ob); // colour will be deleted
+
+ob["colour"]="yellow";
+console.log(ob);// colour will be added
+
+console.log(ob.onRoadPrice(11));// if this. is not there in function, it would print 13.
