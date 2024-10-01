@@ -359,3 +359,33 @@ function Banana(){//constructions have convention of having starting letter in c
 let ban=new Banana();
 console.log(ban);
 
+// ARRAY
+
+let veges=new Array();// or let veges=[]
+veges=['carrot','beetroot']
+console.log(veges);
+console.log(veges[1]);
+console.log(veges[12]);// prints undefined. do not give error.
+
+let col=['carrot',{name:'ajay',age:56},function add(a,b){return a+b},"beetroot"];
+console.log(col[2](1,4))
+
+veges.push("cucumber");// add cucumber as last element in the array.
+veges.unshift("ladysfinger") // add the the element as 1st element of the array.
+console.log(veges);
+
+console.log(veges.pop());//remove from last element
+console.log(veges);
+
+console.log(veges.shift());// removes from starting of the array
+console.log(veges);
+
+for (vege in veges){//it will give index in variable vege
+  console.log(vege);
+}
+
+veges[2]="tomato";
+console.log(veges.length)// 3
+
+
+
