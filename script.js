@@ -387,5 +387,39 @@ for (vege in veges){//it will give index in variable vege
 veges[2]="tomato";
 console.log(veges.length)// 3
 
+// map and set 
 
+let map=new Map()
 
+map.set(1,"apple")
+.set(2,"orange")
+.set(3,"grape")
+.set(4,"banana")
+.set("phone","realme");
+
+console.log(map)
+console.log(map.get(2));//orange
+console.log(map.has(1));//true
+console.log(map.delete(4));
+console.log(map);
+console.log(map.size);
+//map.clear();  //clear whole map elements
+
+for (key of  map.keys()){
+  console.log(key);
+}
+
+for(val of map.values()){
+  console.log(val);
+}
+
+// set
+
+let set=new Set();
+set.add("orange")
+.add("apple")
+.add("banana juice")
+.add(6);
+
+console.log(set);
+// has, delete,clear,size properties are applied here also
