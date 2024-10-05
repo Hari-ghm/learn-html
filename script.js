@@ -423,3 +423,23 @@ set.add("orange")
 
 console.log(set);
 // has, delete,clear,size properties are applied here also
+
+// JSON- JavaScript Object Notation
+let swift={
+   type:"car",
+   brand:"maruti",
+   colour:"red",
+   sold:2500
+};
+console.log(JSON.stringify(swift));
+
+let swiftStr = '{"type": "car","brand": "maruti","colour": "red","sold": 2500}';
+console.log(JSON.parse(swiftStr));//converts string into json object
+
+// date and time
+
+let bday=new Date();
+console.log(bday); // prints current date
+bday=new Date('2006-10-18');
+console.log(bday.getDate);
+
