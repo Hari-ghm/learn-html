@@ -443,3 +443,23 @@ console.log(bday); // prints current date
 bday=new Date('2006-10-18');
 console.log(bday.getDate);
 
+//RECURSION
+
+/* basic need of recursion
+1. base case
+2. update statement
+3. recursive call
+*/
+
+function factorial(n){
+  if (n==0){
+    return 1;
+  }
+  else{
+    return n * factorial(n - 1);
+  }
+  
+}
+let fac=factorial(5);
+console.log(fac);
+
